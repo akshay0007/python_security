@@ -1,0 +1,215 @@
+MAC ::media access control
+perment phical and unique address
+assign by manufacture
+
+commands::
+ifconfig
+eth0::virtual interface
+inet :is ip
+netmask 
+bradcast
+either :mac address
+lo::virtual interface 
+wlan0::external usb wireless adapter
+
+
+change mac address command::
+ifconfig eth0/wlan0 down (disable interface)
+ifconfig eth0 hw ether 00.11.22.33.44.55
+ifconfig eth0/wlan0 up (enable interface)
+
+subprocess module::execute system commands
+
+nmap working
+n/w scanner create
+
+ARP::address resolution protocol
+
+scapy package for n/w discovery
+
+lists []
+dictonary {}
+
+ARP::
+address resolution protocol (arp) is a protocol used by the Internet Protocol (IP) [RFC826], specifically IPv4, to map IP network addresses to the hardware addresses used by a data link protocol
+
+ARP spoofing::
+redirect flow of packets
+arp is not secure
+
+
+arpspoof -i eth0 target myip
+
+port forwarding
+echo 1>/proc/sys/net/ipv4/ip_forward
+
+http modules inside scapy
+scapy_http
+
+iptalbes in unix program:::
+iptables -I FORWARD -j NFQUEUE --queue-num 0  (FOR REMOTE MACHINE)
+
+flush iptables after creating so that at the end of work we delete it
+iptables --flush
+
+
+python packages::
+netfilterqueue
+for installation purpose
+https://pypi.org/project/NetfilterQueue/
+
+netcutter(tools)
+
+
+convert packet to scapy packet
+dns spoofer(tools)
+
+local system
+packet going throug my system leving from my computer
+iptables -I OUTPUT -j NFQUEUE --queue-num 0
+
+
+packet coming throug my system coming to my computer
+iptables -I INPUT -j NFQUEUE --queue-num 0
+
+redirect packets (redirect packet 80 to ssl)::
+iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 10000
+
+
+DNS TABLES
+abc.com  A (record)  ipaddress
+
+DNS A records for converting ip into dns
+
+chksum field recalculate
+
+filter traffic of user
+8==>6(port forward and spoofing dns)
+====================================================================
+
+accept encoding gzip ,deflate
+checksum always same in client(checksum) and server(seqno)
+
+
+pythex website for regex
+content-length in html page define page length if exceed it not loaded into browser due server chk
+
+content length header
+
+BEEF framework::
+beefproject.com(website)
+
+bypass https::
+https::
+encrypt using TLS (transport layer security)or SSL(secure socket layer) 
+for downgrade https into http
+SSLstrip (marks's attack)(tools)
+
+exception::
+like facebook
+use hate as TS now hate s.c.s
+
+subprocess module
+
+for windows command getting wifi info
+netsh wlan show profile ${profilename} key=clear
+
+mail transfer
+using smtplib
+
+requests library
+========================================================
+Lazagne(tools)
+========================================================
+os ,temp modules
+
+keyloggers::
+local keylogger
+remote keylogger
+
+
+library::
+pynput
+
+Threading
+
+class (OOPS concepts)
+
+
+malware keylogger,backdoor
+
+
+netcut(tools)
+coommand
+nc -vv -l -p 4444
+
+sockets
+
+serialization 
+
+json data send over tcp packaging and depackaging from diffrerent end
+
+base64 for downloading for different files
+
+
+for windows:::
+python interpreter for windows converting exe
+python.exe -m pip install pyinstaller
+pyinstaller_path filename.py --onefile --noconsole(optional)
+
+for linux::
+msi file download open by wine the sm with windows
+
+
+regedit
+current_usr/computer/software/micrsoft/run  (reg entry for user pass)
+
+from command line
+reg add /?  (for help)
+reg add path of reg version path /v test /t  REG_SZ /d 'path of python.exe'
+
+import shutil library
+
+tools::
+UPX github repo for converting more packing of exe files(anti virus detection higher)   
+
+vulnarablity in web site
+
+web application hacking::
+
+subdomain.target.com
+
+phythx.com for regex
+
+
+crawling spider(tools)
+
+sending post request::
+
+http requests get and post
+
+Beautiful Soup(library)
+
+urlparse
+urllib3
+
+
+
+ **kwargs as being a dictionary that maps each keyword to the value that we pass alongside it. That is why when we iterate over the kwargs there doesn’t seem to be any order in which they were printed out.
+
+
+ *args in function definitions in python is used to pass a variable number of arguments to a function.
+
+
+
+BeEF framwork
+
+
+website
+http://www.cgisecurity.com/
+https://www.darknet.org.uk/darknet-archives/
+https://www.darknet.org.uk/popular-posts/
+
+tools::
+TheFatRat – Massive Exploitation Tool
+Cyborg Hawk Linux
