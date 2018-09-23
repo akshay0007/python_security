@@ -1,0 +1,202 @@
+GNS3 tools for network emultors
+
+string function in python 
+strip()==>remove spaces from both end
+strip('&')==>strip & from both end
+
+"_".join("abcd")
+o/p==>
+a_b_c_d
+
+concat::
+str1+str1
+str1*5 ==>str1str1....5times
+a in b
+
+formats::
+
+'abc {'name'} from data {'hello'}'.format({'name':name,hello:'hello'))
+
+'abc %S from %s data'%('ab','cd')
+ 
+slice::
+string[1:10] index 1 to 10
+string[-1] end
+
+
+Numbers and math oprations::
+abc=45
+type(abc)
+op==int
+
+
+boolean and logic::
+not(1==1) False
+bool(None)  False
+bool(0)  False
+bool('')  False
+bool('dsf') True
+
+Lists:::single list can contain strings, integers, as well as objects.Lists are mutable, i.e., they can be altered once declared.
+list=[]
+list=['abc','dd',33,1]
+
+tuples:::imutalbe list  sequence of immutable Python objects.
+tuple1=('a','b')
+tuple1=()
+
+(x,y)=tuple1
+
+del tuple1[1] can't support deletion
+
+tuple1+(1,5)
+tuple1*5
+tuple1[0,5]
+
+tuple1[::-1] print tuple in reverse order
+5 in tuple1
+
+
+Sets:::Set is an unordered collection data type that is iterable, mutable, and has no duplicate elements
+normal_set = set(["a", "b","c"]) 
+
+set1.intersction(set2)
+set1.difference(set2)
+set1.union(set2)
+set1.pop()
+set1.clear()
+
+
+dictonaries::
+mydict={'a':'b','c':'d'}
+mydict['x']='r'
+
+del mydict['x']
+
+len(mydict)
+
+mydict.keys()
+mydict.values()
+mydict.items()
+
+conversion::
+nm=2
+typle(nm)
+str(nm)
+int(nm)
+
+typ1=(1,2,3)
+list1=list(typ1)
+typ=tuple(typ1)
+set=set(list1)
+
+
+control flows::
+if ,elif,else
+
+for number in numbers:
+	print(number)
+
+range funciton:::
+range(5)::[0,1,2,3,4]
+
+for element in range(len(elements)):
+	print(elemnet)
+
+
+while::::
+while x<=20:
+	print('heloo')
+
+while x<=20:
+	print('heloo')
+else :
+	pirnt('')
+
+
+
+break::
+
+
+for element in range(len(elements)):
+	if elem==4:
+		break
+	print(elemnet)
+
+continue::
+
+pass::do nothing 
+for element in range(len(elements)):
+	pass
+
+
+Execeptions::
+try:
+	print()
+except Exeception:
+	print()
+finally:
+	print()
+
+
+
+
+Functions::
+
+namespacing
+
+
+file handling::
+cursor
+seek
+
+
+regular expression::
+re
+
+a=re.match()
+a=re.search()
+a=re.findall()
+
+
+list comprehensions:::
+advance python study::
+
+list2=[x**2 for x in range(10)] squres of data
+
+list2=[x**2 for x in range(10) if x>5] squres of data
+
+set1={x**2 for x in range(10) if x>5} squres of data
+
+python lambda function:::
+
+a=lambda x,y:x*y
+
+map 
+filter
+reduce
+
+two modules for threading in python:::
+thread(deprecated)
+threading(new)
+
+
+telnet
+ssh
+ library
+ https://github.com/paramiko/paramiko/
+snmp
+ospf configure
+ library::
+ scapy 
+ https://github.com/secdev/scapy
+
+
+mysql connectors::
+
+
+subnet masking::
+dhcp 
+telnet ssh
+ospf
+
