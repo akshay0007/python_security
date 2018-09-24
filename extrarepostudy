@@ -1,0 +1,5 @@
+for ldap server
+https://github.com/pingidentity
+
+like nginx server for load balancing
+https://github.com/haproxy/haproxy
