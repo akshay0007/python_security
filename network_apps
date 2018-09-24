@@ -200,3 +200,5 @@ dhcp
 telnet ssh
 ospf
 
+libarary colorama for terminal items coloring
+
