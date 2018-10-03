@@ -1,0 +1,170 @@
+bootloader :grub 
+system calls
+virtual file system::
+proc 
+sys
+debugfs
+
+kernal is gatekeeper
+
+
+discovering and controlling hw
+application
+||
+libray std c lib
+||
+kernel
+||
+disk key board mouse
+
+hw info 
+lshw and lspci
+lsusb and lsbk
+lscpu and lsdev
+
+hdparm for disk command
+
+proc ,dev and sys files controlling for peripheral device
+inb and outb
+setpci change register and pcis
+
+lspci
+
+printk :it is send to ram buffer and system console
+
+var/log/messages
+
+tail -f var/log/messages for logging message
+
+
+/proc file system lots of info about the state of kernel
+
+/sys file system is for kernel object
+
+
+device file
+character device and block device
+
+strace ::for checking why system calls not working
+
+sysctl command
+
+sys/block
+
+dmesg 
+
+grub role::
+grub role after post and bios
+
+grub understand file system on disk
+
+for info grub man -k grub
+
+
+configure grub
+
+for grub1::
+grub.conf
+fror grub2::
+/etc/grub.d
+/etc/default/grub
+
+nw grub entries::
+
+kernel command line parmeeters::
+Documentation/kernel-parameters.txt
+
+about 500 are docummneted
+
+
+process and starting serverices
+
+initrd for ram
+
+the initrd has an init that the kenel runs first
+
+init may be link to systemd
+
+run level scripts
+/etc/rc.d
+
+systemd serveric file under
+/etc/systemd/system
+
+
+debug initramfs
+inintrd/initramfs
+
+pstree
+
+loadable kernel modules::
+an object with .ko suffix
+runs kernel space
+written in c
+dynamically adds functionality
+
+finding linux loaded kernel modules::
+
+lsmod command
+
+rmmod commands for removing modules
+
+compiling modules::
+make -c /lib/modules/$(uname -r)/build M=$PWD modules
+
+insmod command
+insmod ./lab.ko
+
+modinfo command
+
+fetching kernel source::
+
+rpm -i kernel*.rpm
+
+make help
+
+make menuconfig
+
+05:02
+
+kernel source code::
+clean
+mrproper
+
+distclean
+
+xconfig
+
+gconfig
+
+menuconfig
+
+config
+
+linux kernel source code
+
+synchronization on linux kenel 
+
+mem.c for cat /dev/null
+
+usr/include==>kernel code compile with include dir also configure code 
+
+fs(file system)==>virtual file system (sysfs,proc)
+
+on disk (ext(2,3,4),btrfs and xfs)
+
+network (nfs)
+
+compatible(ntfs,fat and hfs)
+
+arch subdir (architecture dependecy for linux kernel like some s/w depends on arch component of system)
+
+security.c for all system calls in selinux
+
+xconfig::
+
+
+
+
+
+
